@@ -33,7 +33,7 @@ RUN echo "Downloading $gcc:   " && curl --remote-name --progress-bar https://ftp
     ../$gcc/configure --prefix=$prefix/$gcc \
                       --disable-multilib \
                       --enable-languages=c,c++,fortran && \
-    make --quiet --jobs=$(nproc --all) && \
+    make --jobs=$(nproc --all) && \
     make install && \
     rm -rf /build/*
 
