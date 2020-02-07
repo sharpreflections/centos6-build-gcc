@@ -23,7 +23,7 @@ RUN echo "Downloading $gcc:   " && curl --remote-name --progress-bar https://ftp
     echo "Downloading $isl:   " && curl --remote-name --progress-bar http://isl.gforge.inria.fr/$isl.tar.xz        && \
     # see https://repo.or.cz/w/cloog.git
     echo "Downloading $cloog: " && curl --remote-name --progress-bar http://www.bastoul.net/cloog/pages/download/$cloog.tar.gz && \
-    echo -n "Extracting $gcc..   " && tar xf $gcc.tar.bz2  && echo " done" && \
+    echo -n "Extracting $gcc..   " && tar xf $gcc.tar.xz   && echo " done" && \
     echo -n "Extracting $gmp..   " && tar xf $gmp.tar.bz2  && mv $gmp   $gcc/gmp   && echo " done" && \
     echo -n "Extracting $mpfr..  " && tar xf $mpfr.tar.xz  && mv $mpfr  $gcc/mpfr  && echo " done" && \
     echo -n "Extracting $mpc..   " && tar xf $mpc.tar.gz   && mv $mpc   $gcc/mpc   && echo " done" && \
