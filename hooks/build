@@ -6,7 +6,7 @@ sed --in-place 's/\$mpc/mpc-1.0.1/g'      Dockerfile
 sed --in-place 's/\$mpfr/mpfr-2.4.2/g'    Dockerfile
 sed --in-place 's/\$isl/isl-0.14.1/g'     Dockerfile
 sed --in-place 's/\$cloog/cloog-0.18.4/g' Dockerfile
-sed --in-place 's/\$gcc/gcc-4.8.5/g'      Dockerfile
+sed --in-place 's/\$gcc/gcc-5.5.0/g'      Dockerfile
 sed --in-place 's:\$prefix:/opt:g'        Dockerfile
 
 docker build --tag $IMAGE_NAME .
